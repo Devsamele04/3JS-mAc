@@ -7,6 +7,7 @@ import Maccontainer from "./components/Maccontainer";
 const App = () => {
   return (
     <div className="w-full h-screen ">
+       {/* navbar---- */}
       <div className="nav line flex gap-10 absolute top-5 left-1/2 -translate-x-1/2">
         {[
           "iphone",
@@ -26,6 +27,7 @@ const App = () => {
           </a>
         ))}
       </div>
+      {/* center */}
       <div className="absolute flex flex-col items-center text-white top-30 left-1/2 -translate-x-1/2 font-['Helvetica']">
         <h1 className="masked text-5xl tracking-tighter font-[700]">
           Macbook Pro.
@@ -36,6 +38,7 @@ const App = () => {
           officiis dicta ea, ullam facilis,
         </p>
       </div>
+      {/* bottom mac model */}
       <Canvas camera={{ fov: 15, position: [0, -10, 200] }}>
         <OrbitControls enableZoom={false} />
         <Environment
